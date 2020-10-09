@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Abril Fatface", cursive;
+  background-image: linear-gradient(180deg, #ffffff, #49b6ef);
+  color: rgb(31, 31, 31);
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    height: 100%;
+  }
+}
+
+header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 5rem;
+  width: 100%;
+  height: 10vh;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.top-nav {
+  display: flex;
+  width: 50%;
+  margin-right: 2rem;
+  position: relative;
+}
+
+ul {
+  display: flex;
+  /* border: 2px solid #49b6ef; */
+  width: 50rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.weather {
+  position: relative;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("./resources/img/simple-lace-patterns-png-black-pattern-cliparts-2782835-6244.png");
+  background-size: cover;
+  opacity: 0.03;
+}
+
+.bar {
+  background-image: linear-gradient(145deg, #e8fcf0, #349258);
+  height: 0.5rem;
+  width: 100%;
+}
+
+/* header **********************************************************************************************8 */
+
+main {
+  display: flex;
+  /* height: 100%; */
+  /* border: 12px solid yellow; */
+  align-items: center;
+  flex-direction: column;
+}
+
+/* DATE SECTION ************************************************************************************************ */
+
+.date select {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  border: 1px solid #1d8d48;
+}
+
+/* main section ***********************************************************************************************  */
+
+.expense-box {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1024px) {
+  .expense-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+}
+
+/* THE TWO FORM BOXES *************************************************************************************************** */
+.form1,
+.form2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  /* border: 2px solid red; */
+}
+
+.form1 h2,
+.form2 h2 {
+  align-self: center;
+  padding: 1.5rem 0rem;
+  letter-spacing: 0.2rem;
+}
+
+/* THE OUTLINE OF THE FORM *************************************************************************************************** */
+.inner-box1,
+.inner-box2 {
+  border: 0.5rem solid #1d8d48;
+  box-shadow: 4px 4px rgb(14, 13, 13);
+  border-radius: 7%;
+  height: 30rem;
+}
+
+.inner-box1.receipt {
+  background-color: white;
+  border: 0.5rem solid #942229;
+}
+/* INSIDE THE FORM BOX/ ACTUAL FORM **************************************************************************************************** */
+.line-item-box1,
+.line-item-box2 {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  margin: 0.9rem;
+  overflow-y: scroll;
+  align-self: center;
+}
+
+/* LINE WITH THE TWO INPUTS ************************************************************************************************** */
+
+.line-entry-item1,
+.line-entry-item2 {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.line-entry-item1 select,
+.line-entry-item2 select {
+  border: 2px solid #aaa;
+  margin: 1rem;
+  padding: 0.3rem;
+  font-weight: bold;
+  width: 50%;
+}
+
+.line-entry-item1 input,
+.line-entry-item2 input {
+  border: 2px solid #aaa;
+  margin: 1rem;
+  padding: 0.3rem;
+  font-weight: bold;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .line-entry-item1 select,
+  .line-entry-item2 select {
+    width: 40%;
+  }
+  .line-entry-item1 input,
+  .line-entry-item2 input {
+    width: 40%;
+  }
+  .form1,
+  .form2 {
+    width: 70%;
+  }
+}
+
+/* ADD ITEM BUTTON ***************************************************************************************************** */
+.add-item {
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.add-item button {
+  padding: 0.3rem;
+  font-weight: bold;
+  box-shadow: 2px 2px rgb(46, 46, 46);
+  background-color: #49b6ef;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.add-item button:hover {
+  background-color: #ffffff;
+}
+
+/* THE SUBMIT FORM BUTTONS ************************************************************************************************* */
+.submit {
+  /* border: 2px solid black; */
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.submit button {
+  padding: 0.5rem;
+  color: #942229;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* THE CALCULATE FORM *************************************************************************************************** */
+.calculate {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  background-image: linear-gradient(180deg, #6dbbe6, #58b7eb);
+}
+
+.calculate button {
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.calculate button:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Expenses</title>
+  </head>
+  <body>
+    <!-- header section ********************************************** -->
+    <header>
+      <nav class="top-nav">
+        <ul class="top-nav-list">
+          <li>Logo</li>
+          <li>History</li>
+        </ul>
+      </nav>
+      <div class="weather">
+      <div id="openweathermap-widget-24"></div>
+    </div>
+            <!-- for the overlay -->
+      <div class="overlay"></div>
+    </header>
+    <div class="bar"></div>
+    <!-- main Section -->
+    <main>
+      <h1>Shared Expenses</h1>
+      <div class="date">
+        <select name="date" id="date">
+          <option value="january">January</option>
+          <option value="february">february</option>
+          <option value="march">March</option>
+          <option value="april">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+        </select>
+        <select name="year" id="year">
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+        </select>
+      </div>
+
+      <!-- main box with two entry boxes -->
+      <div class="expense-box">
+        <!-- first entry boxy -->
+        <form class="form1">
+          <h2>Abel</h2>
+
+          <div class="inner-box1">
+            <div class="line-item-box1">
+              <div class="line-entry-item1">
+                <select name="Description" id="description">
+                  <option value="groceries">Groceries</option>
+                  <option value="dining-out">Dining Out</option>
+                  <option value="travel-leisure">Travel/Leisure</option>
+                  <option value="bills-utilities">Bills/utilities</option>
+                </select>
+                <input type="number" placeholder="$" />
+              </div>
+
+              <div class="line-entry-item1">
+                <select name="Description" id="description">
+                  <option value="groceries">Groceries</option>
+                  <option value="dining-out">Dining Out</option>
+                  <option value="travel-leisure">Travel/Leisure</option>
+                  <option value="bills-utilities">Bills/utilities</option>
+                </select>
+                <input type="number" placeholder="$" />
+              </div>
+
+              <div class="line-entry-item1">
+                <select name="Description" id="description">
+                  <option value="groceries">Groceries</option>
+                  <option value="dining-out">Dining Out</option>
+                  <option value="travel-leisure">Travel/Leisure</option>
+                  <option value="bills-utilities">Bills/utilities</option>
+                </select>
+                <input type="number" placeholder="$" />
+              </div>
+            </div>
+            <div class="submit-ok"></div>
+          </div>
+          <div class="add-item">
+            <button class="add-item-btn1" data-set="1">+</button>
+          </div>
+          <div class="submit">
+            <button class="submit-btn1">Submit</button>
+          </div>
+        </form>
+
+        <!-- second entry box -->
+
+        <form class="form2">
+          <h2>Michelle</h2>
+
+          <div class="inner-box2">
+            <div class="line-item-box2">
+              <div class="line-entry-item2">
+                <select name="Description" id="description">
+                  <option value="groceries">Groceries</option>
+                  <option value="dining-out">Dining Out</option>
+                  <option value="travel-leisure">Travel/Leisure</option>
+                  <option value="bills-utilities">Bills/utilities</option>
+                </select>
+                <input type="number" placeholder="$" />
+              </div>
+
+              <div class="line-entry-item2">
+                <select name="Description" id="description">
+                  <option value="groceries">Groceries</option>
+                  <option value="dining-out">Dining Out</option>
+                  <option value="travel-leisure">Travel/Leisure</option>
+                  <option value="bills-utilities">Bills/utilities</option>
+                </select>
+                <input type="number" placeholder="$" />
+              </div>
+
+              <div class="line-entry-item2">
+                <select name="Description" id="description">
+                  <option value="groceries">Groceries</option>
+                  <option value="dining-out">Dining Out</option>
+                  <option value="travel-leisure">Travel/Leisure</option>
+                  <option value="bills-utilities">Bills/utilities</option>
+                </select>
+                <input type="number" placeholder="$" />
+              </div>
+            </div>
+          </div>
+          <div class="add-item">
+            <button class="add-item-btn2" data-set="1">+</button>
+          </div>
+          <div class="submit">
+            <button class="submit-btn2">Submit</button>
+          </div>
+        </form>
+    </main>
+    <div class="calculate">
+      <div>
+        <button>Calculate</button>
+      </div>
+      </div>
+
+    </div>
+
+
+    <!-- scripts -->
+    <!-- <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 24,cityid: '4140963',appid: 'd84c714f78b7f7a958cbc87af75a58d5',units: 'imperial',containerid: 'openweathermap-widget-24',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>     -->
+    <!-- <script src="./app.js"></script> -->
+  </body>
+</html>
